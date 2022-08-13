@@ -1,0 +1,77 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal" >
+
+	<LinearLayout
+		android:layout_width="0dp"
+        android:layout_weight="0.5"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+	    <FrameLayout
+	        android:id="@+id/settings"
+    	    android:layout_width="match_parent"
+        	android:layout_height="match_parent" >
+	    </FrameLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+		android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+		android:background="@drawable/text_border"
+		android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+	  <FrameLayout
+		 android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+
+          <TextView
+              android:id="@+id/textViewExtGps"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="8dp"
+              android:layout_marginBottom="2dp"
+              android:ellipsize="end"
+              android:paddingStart="4dp"
+              android:paddingTop="8dp"
+              android:text="[--]\nGPS：×未受信\nMock：\n緯度：\n経度：\n方位：\n速度：\nHDOP：\n衛星："
+              android:textColor="@color/black"
+              android:textSize="16sp" />
+
+          <Button
+              android:id="@+id/button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="right|top"
+              android:layout_marginTop="0dp"
+              android:layout_marginRight="12dp"
+              android:text="●Log開始"
+              android:textAllCaps="false"
+              android:textColor="@color/red"
+              android:textSize="16sp"
+              app:backgroundTint="@color/colorButtonLight" />
+      </FrameLayout>
+    </LinearLayout>
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</LinearLayout>

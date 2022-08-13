@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GpsSelector</string>
+
+    <!-- Settings Activity Title -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_device_summary">"%s"</string>
+	<string name="accessibility_desciription">端末の起動時に自動で開始するならオンにします。</string>
+</resources>

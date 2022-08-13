@@ -1,0 +1,52 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="基本設定">
+        <ListPreference
+            app:iconSpaceReserved="false"
+            app:key="DEVICE"
+            app:entries="@array/empty_entries"
+            app:entryValues="@array/empty_values"
+            app:summary="@string/pref_device_summary"
+            app:title="外付けGPSユニットの選択" />
+
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            app:key="START_SW"
+            app:title="サービス作動" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Mock(外付けGPSユニットによる測位)">
+        <CheckBoxPreference
+            app:iconSpaceReserved="false"
+            app:key="MOCK"
+            app:title="Mockイネイブル" />
+
+        <CheckBoxPreference
+            app:iconSpaceReserved="false"
+            app:key="MOCK1"
+            app:title="INS時のみMockする" />
+
+        <CheckBoxPreference
+            app:iconSpaceReserved="false"
+            app:key="MOCK2"
+            app:title="切り替わり時に音を鳴らす" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Log">
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            app:key="CAPTURE_SW"
+            app:title="画面もLog" />
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+    </PreferenceCategory>
+
+</PreferenceScreen>
