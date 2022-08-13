@@ -1,4 +1,4 @@
-# Low-Cost-INS-unit-development-project
+# Low-cost-INS-unit-development-project
 # ローコスト外付け自律航法ユニット開発プロジェクト
 
 **イントロダクション**
